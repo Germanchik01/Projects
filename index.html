@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список дел</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Список дел</h1>
+    <button id="theme-toggle">Сменить тему</button>
+
+    <div class="input-group">
+      <input type="text" id="new-todo" placeholder="Добавить новое дело...">
+      <select id="priority">
+        <option value="low">Низкий</option>
+        <option value="medium">Средний</option>
+        <option value="high">Высокий</option>
+      </select>
+      <input type="date" id="deadline">
+      <button id="add-todo">Добавить</button>
+    </div>
+
+    <div class="filter-group">
+      <button id="filter-all" class="active">Все</button>
+      <button id="filter-active">Активные</button>
+      <button id="filter-completed">Выполненные</button>
+    </div>
+
+    <div class="sort-group">
+      <label for="sort-by">Сортировать по:</label>
+      <select id="sort-by">
+        <option value="priority">Приоритету</option>
+        <option value="alphabetical">Алфавиту</option>
+      </select>
+    </div>
+
+    <div class="search-group">
+      <input type="text" id="search-term" placeholder="Поиск...">
+    </div>
+
+    <ul id="todo-list">
+      <!-- Элементы списка дел будут добавлены динамически -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
